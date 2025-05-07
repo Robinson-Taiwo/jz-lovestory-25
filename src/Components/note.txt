@@ -1,0 +1,154 @@
+    <Image
+            src="/images/love.png"
+            alt="Wedding heart"
+            objectFit="cover"
+            width={100}
+            height={100}
+            className="h-20 w-20 absolute bottom-80 right-20"
+          />
+          <Image
+            src="/images/love.png"
+            alt="Wedding heart"
+            objectFit="cover"
+            width={100}
+            height={100}
+            className="h-20 w-20 absolute bottom-60 right-80"
+          />
+          <Image
+            src="/images/love.png"
+            alt="Wedding heart"
+            objectFit="cover"
+            width={100}
+            height={100}
+            className="h-20 w-20 absolute top-40 left-20"
+          />
+          <Image
+            src="/images/love.png"
+            alt="Wedding heart"
+            objectFit="cover"
+            width={100}
+            height={100}
+            className="h-20 w-20 absolute top-10 left-100"
+          />
+          <Image
+            src="/images/love.png"
+            alt="Wedding heart"
+            objectFit="cover"
+            width={100}
+            height={100}
+            className="h-20 w-20 absolute bottom-10 right-70"
+          />
+          <Image
+            src="/images/love.png"
+            alt="Wedding heart"
+            objectFit="cover"
+            width={100}
+            height={100}
+            className="h-20 w-20 absolute bottom-10 left-70"
+          />
+
+
+
+              <div className="flex relative w-full h-full max-w-5xl overflow-x-hidden">
+      
+
+          <div className="w-full flex flex-col items-center justify-center text-center text-[2rem] font-medium z-10">
+            <div className="font-parisienne font-bold text-wedding-gold 2xl:text-[5.5rem] text-[4rem]">
+              <h1>Zoe Abidemi</h1>
+              &<h1>Joshua Iyanu</h1>
+            </div>
+            <p className="text-lg font-greatVibes text-wedding-wine mb-6">#JZ Love Story’25</p>
+
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  className="mt-8 rounded-full bg-wedding-gold text-wedding-wine font-lora py-3 px-8 text-lg hover:bg-wedding-wine hover:text-wedding-cream transition-colors duration-300 shadow-md"
+                >
+                  Continue
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="bg-wedding-cream text-wedding-charcoal rounded-xl shadow-2xl p-6 max-w-[90vw] sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-[30rem] w-full transform transition-all duration-300 scale-100 sm:scale-105 border border-wedding-gold/20">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-playfair font-bold text-wedding-charcoal">
+                    Welcome, Guest
+                  </DialogTitle>
+                  <DialogDescription className="text-sm font-lora text-wedding-charcoal/80">
+                    Please enter your name to join Zoe & Joshua’s celebration.
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="grid gap-4 py-4">
+                  <div className="grid grid-cols-4 items-center gap-4">
+                    <Label
+                      htmlFor="name"
+                      className="text-right font-lora text-wedding-charcoal"
+                    >
+                      Name
+                    </Label>
+                    <Input
+                      id="name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="Enter your name"
+                      className="col-span-3 border-wedding-gold/50 focus:ring-wedding-gold focus:border-wedding-gold bg-wedding-cream/90 text-wedding-charcoal font-lora rounded-md"
+                    />
+                  </div>
+                </div>
+                <DialogFooter>
+                  <Button
+                    type="submit"
+                    onClick={handleSubmit}
+                    disabled={!name.trim()}
+                    className="w-full bg-wedding-gold text-wedding-charcoal font-lora py-2 px-6 rounded-md hover:bg-wedding-wine hover:text-wedding-cream focus:ring-2 focus:ring-wedding-gold focus:ring-offset-2 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed shadow-sm"
+                  >
+                    Continue
+                  </Button>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
+          </div>
+        </div>
+
+
+
+
+
+
+      {/* Timeline */}
+      <section className="mt-12 max-w-4xl mx-auto">
+        <div className="space-y-12">
+          <Card className="bg-wedding-cream border-wedding-charcoal">
+            <CardContent className="pt-6">
+              <h3 className="text-2xl font-playfair font-bold">April 2019: The Meeting</h3>
+              <p className="mt-2">
+                Zoe and Joshua met at a university charity event in Lagos. Joshua’s warm smile caught
+                Zoe’s eye, and a shared love for music sparked their first conversation.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-wedding-cream border-wedding-charcoal">
+            <CardContent className="pt-6">
+              <h3 className="text-2xl font-playfair font-bold">June 2020: First Date</h3>
+              <p className="mt-2">
+                Their first date was a sunset picnic by the Lagos Lagoon, where they laughed over jollof
+                rice and dreamed about the future.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="bg-wedding-cream border-wedding-charcoal">
+            <CardContent className="pt-6">
+              <h3 className="text-2xl font-playfair font-bold">December 2024: The Proposal</h3>
+              <p className="mt-2">
+                Joshua proposed under a canopy of fairy lights at Zoe’s favorite garden, with a ring
+                that sparkled as brightly as their love.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Quote */}
+      <section className="mt-12 text-center bg-wedding-wine text-wedding-cream py-16">
+        <p className="text-2xl font-greatVibes italic max-w-2xl mx-auto">
+          “With you, I found my home, my joy, and my forever.” – Zoe & Joshua
+        </p>
+      </section>
