@@ -12,6 +12,7 @@ import {
   Herr_Von_Muellerhoff,
   Sacramento,
 } from 'next/font/google';
+import {Analytics} from "@vercel/analytics/react"
 import './globals.css';
 
 // Configure fonts with CSS variables for Tailwind
@@ -112,6 +113,7 @@ export default function RootLayout({
         `}
       >
         {children}
+        <Analytics/>
       </body>
     </html>
   );
